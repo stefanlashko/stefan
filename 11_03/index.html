@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+<button>👀</button>
+<img class="playmusic" src="https://media.giphy.com/media/t7MWRoExDRF72/giphy.gif" alt="">
+
+<audio class="cat-tom"src="tom.wav"></audio>
+
+    <script>
+    let message='🎹';
+    let lol='💀';
+        
+    
+    $('body').append(lol);
+    $('button').click(function(){
+        $('body').append(message);
+
+    })
+
+$('.playmusic').click(function(){
+    $('.cat-tom').trigger('play');
+
+})
+
+    </script>
+</body>
+</html>

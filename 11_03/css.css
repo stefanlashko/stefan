@@ -1,0 +1,69 @@
+body {
+    font-size: 100px;
+    color: black
+}
+
+.container div {
+    height: 100px;
+}
+button {
+    height: 200px;
+    width: 200px;
+    font-size: 100px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: gray;
+    align-items: center;
+    font-size: 100px;
+}
+.moon:after {
+    content: '🌚';
+    animation: 2s linear moon infinite;
+}
+@keyframes moon {
+    0% {
+
+    }
+    
+    100% {
+        content: '🌝';
+    }
+}
+
+.sheep:after {
+    content: '🐑';
+    animation: 2s linear sheep infinite;
+}
+@keyframes sheep {
+    0% {
+
+    }
+    
+    100% {
+        content: '🐏';
+    }
+}
+
+.snow:after {
+    content: '⛄️';
+    animation: 2s linear snow infinite;
+}
+@keyframes snow {
+    0% {
+
+    }
+    
+    100% {
+        content: '☃️';
+    }
+}
